@@ -1,5 +1,7 @@
 module.exports = {
     // 选项...
-    baseUrl:    '/',
+    baseUrl: process.env.NODE_ENV === 'production'
+    ? '/tos/'
+    : '/',
     assetsDir: "./"
   }
